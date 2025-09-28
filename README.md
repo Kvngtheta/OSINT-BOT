@@ -1,6 +1,6 @@
 # OSINT-BOT
 
-# Discord Cyber-Intel Bot (V1)
+# Discord Cyber-Intel Bot (v1)
 
 This bot ingests a news channel, summarizes articles with OpenAI, cross-references public intel feeds, and posts **actionable intelligence** into another channel. It also supports slash commands for ad‑hoc queries.
 
