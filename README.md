@@ -33,7 +33,7 @@ This bot ingests a news channel, summarizes articles with OpenAI, cross-referenc
    python main.py
    ```
 
-   ## Docker (optional)
+## Docker (optional)
 ```bash
 docker build -t osint-bot:<tag> .
 
