@@ -1,6 +1,6 @@
-# CINT-BOT
+# OSINT-BOT
 
-# Discord Cyber-Intel Bot (Secure Template)
+# Discord Cyber-Intel Bot (V1)
 
 This bot ingests a news channel, summarizes articles with OpenAI, cross-references public intel feeds, and posts **actionable intelligence** into another channel. It also supports slash commands for ad‑hoc queries.
 
@@ -48,7 +48,8 @@ docker run -d --rm \
   -v $(pwd)/state:/state \
   docker.io/no0backsappi3/osint-bot:v1.0
 ```
-
+##What's New?
+- Integrated google feeds: This is will be a backup if your main feeds cannot find useful information
 
 ## Security Notes
 - **Never commit** `.env` or secrets.
