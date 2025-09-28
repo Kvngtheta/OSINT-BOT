@@ -28,6 +28,9 @@ This bot ingests a news channel, summarizes articles with OpenAI, cross-referenc
    ```bash
    export $(grep -v '^#' .env | xargs -d'\n')
    python main.py
+   OR
+   set -a; source .env; set +a
+   python main.py
    ```
 
    ## Docker (optional)
