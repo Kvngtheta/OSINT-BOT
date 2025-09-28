@@ -35,15 +35,18 @@ This bot ingests a news channel, summarizes articles with OpenAI, cross-referenc
 
    ## Docker (optional)
 ```bash
-docker build -t cyber-intel-bot:latest .
+docker build -t osint-bot:<tag> .
+
+# You can also pull it from dockerhub; be sure to pull the latest version
+sudo docker pull no0backsappi3/osint-bot:v1.0
 # supply secrets at runtime; mount state volume
-docker run --rm \
+docker run -d --rm \
   -e DISCORD_BOT_TOKEN=... \
   -e OPENAI_API_KEY=... \
   -e NEWS_CHANNEL_ID=... \
   -e INTEL_CHANNEL_ID=... \
   -v $(pwd)/state:/state \
-  cyber-intel-bot:latest
+  docker.io/no0backsappi3/osint-bot:v1.0
 ```
 
 
