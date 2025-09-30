@@ -53,6 +53,8 @@ docker run -d --rm \
 
 ## Security Notes
 - **Never commit** `.env` or secrets.
+- DO NOT USE FOR ON SENSITIVE SERVER! The bot is currently on configured to be used with administratvie role
+- SQLDB is not secured in ANY way! So all previous messages are logged locally on your server/container.
 - Scoped tokens: restrict Discord bot permissions to only required channels.
 - Input validation: the bot only fetches `http(s)` URLs; timeouts & size caps applied.
 - Rate limits: concurrent HTTP semaphore to avoid abuse; add per‑user command cooldowns if needed.
